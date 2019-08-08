@@ -1,0 +1,40 @@
+<html style="min-width: 600px; min-height: 600px">
+<head>
+<link rel="stylesheet" href="style.css"></link>
+<link
+	href='http://fonts.googleapis.com/css?family=Cagliostro|Oswald|Open+Sans+Condensed:300,700'
+	rel='stylesheet' type='text/css'>
+<script src="jquery-2.0.3.min.js"></script>
+<script src="database.js"></script>
+<script src="common.js"></script>
+<script src="addbookmark.js"></script>
+<script src="aes.js"></script>
+</head>
+
+<body>
+
+	<form>
+		<input type="hidden" id="parentid" value="0" /> 
+		<input type="button" value="Back" id="backBtn" />
+		<table>
+			<tr>
+				<td><label>Name:</label></td>
+				<td><input type="text" id="name"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="radio" name="type" value="folder">Folder
+					<input type="radio" name="type" value="bookmark">Bookmark <input
+					type="radio" name="type" value="private">Private Folder</td>
+			</tr>
+			<tr id="urlTR" style="display: none">
+				<td><label>URL:</label></td>
+				<td><textarea id="url" rows="5" cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" id="saveBtn"
+					value="Save" /><input type="button" value="Cancel" id="cancelBtn"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

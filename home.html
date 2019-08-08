@@ -1,0 +1,29 @@
+<html style="min-width: 600px; min-height: 600px">
+<head>
+<link rel="stylesheet" href="style.css"></link>
+<link href='http://fonts.googleapis.com/css?family=Cagliostro|Oswald|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<script src="jquery-2.0.3.min.js"></script>
+<script src="database.js"></script>
+<script src="common.js"></script>
+<script src="home.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="aes.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>
+		
+	
+	<input type="button" value="Back" id="backBtn" style="margin-left:12px"/>
+	<input type="button" value="Set Password" id="setPasswdBtn" style="margin-left:12px"/>
+	<input type="button" value="Reset Password" id="resetPasswdBtn" style="margin-left:12px"/>
+	<label>Mark as Default Page:</label> <input type="checkbox" id="defaultPageCheck"/>
+	
+	<form name="MainForm">
+		<input type="hidden" id="parentid" value="0"/>
+		<div id="contentDIV"></div>
+		<div class="additem"></div>
+		
+	</form>
+</body>
+</html>

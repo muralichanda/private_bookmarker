@@ -1,0 +1,57 @@
+<html style="min-width: 600px; min-height: 600px">
+<head>
+<link rel="stylesheet" href="style.css"></link>
+<link
+	href='http://fonts.googleapis.com/css?family=Cagliostro|Oswald|Open+Sans+Condensed:300,700'
+	rel='stylesheet' type='text/css'>
+<script src="jquery-2.0.3.min.js"></script>
+<script src="database.js"></script>
+<script src="common.js"></script>
+<script src="passcode.js"></script>
+<script src="aes.js"></script>
+</head>
+ 
+<body>
+
+	<form>
+		<input type="hidden" id="id" value="0" />
+		<input type="hidden" id="parentid" value="0" />
+		<input type="button" value="Back" id="backBtn" />
+		
+		
+		<table id="loginTable" style="align:center;display:none">
+			<tr>
+				<td><label>Passcode:</label></td>
+				<td><input type="password" id="password1"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Enter" id="loginBtn"/>
+					<input type="button" value="Cancel" id="cancelBtn1"/>
+				</td>
+			</tr>
+		</table>
+		
+		<table id="registerTable" style="align:center;display:none">
+			<tr>
+				<td><label>Passcode:</label></td>
+				<td><input type="password" id="password2"></td>
+			</tr>
+			<tr>
+				<td><label>Retype Passcode:</label></td>
+				<td><input type="password" id="rePassword"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="Save & Continue" id="saveBtn"/>
+					<input type="button" value="Cancel" id="cancelBtn2"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+ 
+
+
+
+</body>
+</html>
